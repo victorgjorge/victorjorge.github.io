@@ -1008,6 +1008,93 @@ body {
     font-weight: 600;
 }
 
+.case-block-closing {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(122, 0, 223, 0.2);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text);
+}
+
+/* Workflow Comparison */
+.workflow-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.workflow-card {
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.workflow-before {
+    background: rgba(239, 68, 68, 0.08);
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.workflow-after {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+.workflow-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+.workflow-before .workflow-label {
+    color: #ef4444;
+}
+
+.workflow-after .workflow-label {
+    color: #10b981;
+}
+
+.workflow-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.workflow-list li {
+    padding: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--border);
+}
+
+.workflow-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.workflow-list li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--text-subtle);
+}
+
+.workflow-after .workflow-list li:before {
+    content: '✓';
+    color: #10b981;
+}
+
+@media (max-width: 768px) {
+    .workflow-comparison {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* RISE Dashboard Styles */
 .rise-dashboard {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);

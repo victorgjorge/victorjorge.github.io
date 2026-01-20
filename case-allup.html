@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>allUP Case Study | Victor G. Jorge</title>
+    <title>allUP Case Studies | Victor G. Jorge</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,6 @@
             <a href="index.html" class="nav-logo">Victor G. Jorge</a>
             <div class="nav-links">
                 <a href="index.html#impact">Work</a>
-                <a href="index.html#skills">Skills</a>
                 <a href="index.html#about">About</a>
                 <a href="#" class="nav-resume">Resume</a>
                 <a href="index.html#contact" class="nav-cta">Let's Talk</a>
@@ -24,56 +23,234 @@
         <div class="container">
             <a href="index.html#impact" class="back-link">← Back to Case Studies</a>
             <img src="allup-logo.svg" alt="allUP" class="case-detail-logo">
-            <span class="case-detail-role">Business Operations Manager</span>
-            <h1 class="case-detail-title">Building Operational Systems That Scale</h1>
-            <p class="case-detail-summary">Early-stage startup building AI-powered job distribution infrastructure across the United States.</p>
+            <h1 class="case-detail-title">Operations & Product Enablement</h1>
+            <p class="case-detail-subtitle">A collection of operational and product initiatives at allUP</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="case-content-section">
         <div class="container case-detail-content">
-            <div class="case-study">
-                <div class="case-description">
-                    <p>At allUP, I designed and owned the end-to-end operational system that supported the company's growth as it scaled across clients, roles, and geographies.</p>
-                    <p>I translated leadership decisions into execution in high-urgency, multi–time zone environments, building the operational infrastructure required to grow without increasing complexity.</p>
-                </div>
-                <h4 class="case-section-title">What I did</h4>
-                <ul class="case-details">
-                    <li>Designed and owned the operational flow from contract close to job launch</li>
-                    <li>Replaced fragile, manual workflows with scalable, automated processes using no-code tools and AI</li>
-                    <li>Established the weekly operating cadence, performance tracking, and issue resolution routines</li>
-                    <li>Built and owned the performance analysis layer across the platform and LinkedIn</li>
-                </ul>
-                <div class="case-impact">
-                    <h4>Impact</h4>
-                    <ul>
-                        <li>Scaled job distribution from ~20 to <strong>1,500+ live roles</strong> across the U.S.</li>
-                        <li>Enabled growth from a handful of clients to hundreds <strong>without proportional team growth</strong></li>
-                        <li>Created full visibility into role performance, geographic demand, and conversion rates</li>
-                        <li>Supported faster, data-informed operational and distribution decisions</li>
-                    </ul>
-                </div>
-                <div class="case-testimonials">
-                    <h4>Video Testimonials</h4>
-                    <div class="video-grid">
-                        <div class="video-card">
-                            <video controls poster="https://assets.wrkvbs.io/c/response/abb5bb4e-c908-4986-8f5d-865aec4e8fe9">
-                                <source src="https://assets.wrkvbs.io/o/9c79484c-7a76-4330-8df0-ad66e75cb3f9" type="video/mp4">
-                            </video>
+
+            <div class="case-selector">
+                <p class="case-selector-label">Select a case study:</p>
+            </div>
+
+            <!-- Case Study 1: Scalable Job Publishing Workflow -->
+            <div class="accordion-item" data-accordion="1">
+                <button class="accordion-header active" onclick="toggleAccordion(1)">
+                    <div class="accordion-header-content">
+                        <span class="accordion-number">01</span>
+                        <div class="accordion-title-group">
+                            <h3 class="accordion-title">Operations & Product Enablement</h3>
+                            <p class="accordion-subtitle">Scalable Job Publishing Workflow for a High-Growth Startup</p>
                         </div>
-                        <div class="video-card">
-                            <video controls poster="https://assets.wrkvbs.io/o/0d9ac1d7-6dc8-4d1b-844b-0bd6453874b0">
-                                <source src="https://assets.wrkvbs.io/o/7273b2f5-e7ee-471c-998f-89aa4b036964" type="video/mp4">
-                            </video>
+                    </div>
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content active">
+                    <div class="case-block">
+                        <h2 class="case-block-title">Context & Challenge</h2>
+                        <div class="case-block-content">
+                            <p>When I joined allUP, the company was experiencing rapid growth, reflected in a rising number of clients and job opportunities that needed to be published quickly on the platform. Although the product already had a live iOS app, the job creation and publishing process was highly manual, fragmented across multiple tools, and not designed for scale.</p>
+                            <p>New opportunities required extensive backstage configuration, heavy coordination across teams, and workarounds to support non-iOS applicants. As volume increased, this setup created operational risk, slowed down time-to-market, and concentrated critical knowledge in a single role.</p>
+                            <p>I was hired with two clear objectives:</p>
+                            <ul class="case-block-list case-block-list-numbered">
+                                <li>Design a sustainable, scalable, and efficient job publishing process</li>
+                                <li>Increase speed and throughput, enabling new opportunities to go live as fast as possible</li>
+                            </ul>
                         </div>
-                        <div class="video-card">
-                            <video controls poster="https://assets.wrkvbs.io/o/3c7a4ce2-77b5-4952-9036-87d41229df51">
-                                <source src="https://assets.wrkvbs.io/o/972ab355-be81-4f44-a474-a66f66abf46b" type="video/mp4">
-                            </video>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Problem</h2>
+                        <div class="case-block-content">
+                            <p>The initial workflow suffered from several structural limitations:</p>
+                            <ul class="case-block-list">
+                                <li>Manual job setup across multiple tools and systems</li>
+                                <li>No centralized orchestration of tasks, dependencies, and ownership</li>
+                                <li>High coordination cost between Operations, Product, Marketing, and Engineering</li>
+                                <li>Separate and fragile application flows for Android users</li>
+                                <li>Low automation and high cognitive load</li>
+                            </ul>
+                            <p>Without a structural redesign, operational complexity would continue to grow faster than the business itself.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Approach & Role</h2>
+                        <div class="case-block-content">
+                            <p>I designed and operated a centralized, SOP-driven workflow, using Notion as the operational control layer during the company's early scaling phase.</p>
+                            <p>My responsibilities included:</p>
+                            <ul class="case-block-list">
+                                <li>Building a lightweight CRM in Notion to track clients and their job opportunities</li>
+                                <li>Creating job-level operational cards to orchestrate all required actions</li>
+                                <li>Defining a standardized SOP with clear ownership across teams</li>
+                                <li>Centralizing all job-related information (role details, compensation, location, workplace type, job descriptions)</li>
+                                <li>Managing the end-to-end job configuration and publishing process</li>
+                            </ul>
+                            <p>At that stage, I also operated a parallel application flow for Android users, coordinating configurations across tools such as Typeform, VideoAsk, and Zapier to ensure applicants received consistent communication and status updates.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Operational Evolution & Automation</h2>
+                        <div class="case-block-content">
+                            <p>Due to my ownership of the full workflow, I also became responsible for identifying opportunities to simplify and automate the operation. I led this process in close collaboration with Weston (COO & Co-Founder).</p>
+                            <p>Over time, we progressively reduced complexity and removed temporary workarounds by:</p>
+                            <ul class="case-block-list">
+                                <li>Eliminating parallel application flows and third-party dependencies</li>
+                                <li>Enabling web-based applications, allowing candidates to apply regardless of device</li>
+                                <li>Designing and implementing a unified job creation flow within the admin system</li>
+                                <li>Migrating job descriptions and configuration logic from Notion directly into the admin</li>
+                                <li>Leveraging existing Prompt Workshop references to independently create prompts without cross-team dependency</li>
+                            </ul>
+                            <p>This transition transformed the operation from a tool-heavy workaround into a clean, productized workflow.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block case-block-highlight">
+                        <h2 class="case-block-title">Output & Results</h2>
+                        <div class="case-block-content">
+                            <ul class="case-results-list">
+                                <li>Successful operation of a scalable job publishing workflow during a high-growth phase</li>
+                                <li>Progressive automation and simplification of the full job lifecycle</li>
+                                <li>Removal of Typeform, VideoAsk, Zapier, and other temporary tools</li>
+                                <li>Significant reduction in time-to-publish, with many roles going live immediately after intake</li>
+                                <li>Reduced operational risk and dependency on manual coordination</li>
+                                <li>Creation of a streamlined, admin-driven flow capable of supporting scale</li>
+                                <li>Strong collaboration with the COO & Co-Founder in shaping the platform's operational evolution</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Before vs. After Workflow</h2>
+                        <div class="case-block-content">
+                            <div class="workflow-comparison">
+                                <div class="workflow-card workflow-before">
+                                    <h3 class="workflow-label">Before</h3>
+                                    <ul class="workflow-list">
+                                        <li>Job intake → Notion → Admin → Typeform → VideoAsk → Zapier</li>
+                                        <li>Separate iOS and Android application flows</li>
+                                        <li>Job descriptions and prompts distributed across tools</li>
+                                        <li>High manual effort and coordination overhead</li>
+                                    </ul>
+                                </div>
+                                <div class="workflow-card workflow-after">
+                                    <h3 class="workflow-label">After</h3>
+                                    <ul class="workflow-list">
+                                        <li>Slack notification → CRM check → Job tracked in Notion (status only)</li>
+                                        <li>Full configuration completed directly in the admin</li>
+                                        <li>Unified web-based application flow</li>
+                                        <li>Prompt Workshop created independently using existing references</li>
+                                        <li>Job goes live immediately after setup</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Case Study 2: Marketplace Growth Operations -->
+            <div class="accordion-item" data-accordion="2">
+                <button class="accordion-header" onclick="toggleAccordion(2)">
+                    <div class="accordion-header-content">
+                        <span class="accordion-number">02</span>
+                        <div class="accordion-title-group">
+                            <h3 class="accordion-title">Marketplace Growth Operations</h3>
+                            <p class="accordion-subtitle">Scaling Job Distribution and Candidate Demand via LinkedIn</p>
+                        </div>
+                    </div>
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <div class="case-block">
+                        <h2 class="case-block-title">Context & Challenge</h2>
+                        <div class="case-block-content">
+                            <p>As allUP scaled its marketplace, publishing jobs on the platform was not enough. The company needed to ensure consistent candidate demand for a growing number of active opportunities, while maintaining operational control over cost and efficiency.</p>
+                            <p>To support this, allUP created a dedicated LinkedIn page — Jobs by allUP — designed to distribute live opportunities and route candidates directly into the platform. At this stage, LinkedIn operated under a variable, pay-per-post cost model, which made distribution efficiency a critical operational concern.</p>
+                            <p>I was responsible for operating, measuring, and evolving this distribution layer, ensuring the marketplace remained balanced as volume increased.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Problem</h2>
+                        <div class="case-block-content">
+                            <p>Under the variable-cost model, job distribution presented several risks:</p>
+                            <ul class="case-block-list">
+                                <li>Each job post required manual setup and paid distribution, often city by city</li>
+                                <li>Costs scaled linearly with volume, increasing financial exposure</li>
+                                <li>Limited visibility into which roles, cities, or categories generated demand more efficiently</li>
+                                <li>No structured criteria to decide when to repost, pause, or stop investing in a role</li>
+                            </ul>
+                            <p>Without a clear performance and cost-feedback loop, scaling distribution would quickly become inefficient and unsustainable.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Approach & Role</h2>
+                        <div class="case-block-content">
+                            <p>Once a job was live on the allUP platform, I managed the end-to-end LinkedIn distribution workflow, including:</p>
+                            <ul class="case-block-list">
+                                <li>Structuring job information for LinkedIn distribution</li>
+                                <li>Linking applications directly back to the allUP platform</li>
+                                <li>Publishing roles across multiple U.S. cities, especially for remote positions</li>
+                            </ul>
+                            <p>To operate efficiently under variable costs, I built a performance tracking framework focused on operational decision-making. This included:</p>
+                            <ul class="case-block-list">
+                                <li>Tracking views, applicants, and spend per job</li>
+                                <li>Analyzing performance by role type, city, and category</li>
+                                <li>Identifying efficiency patterns across markets</li>
+                                <li>Defining saturation thresholds to guide reposting and spend allocation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Performance Tracking & Cost Control (Variable-Cost Phase)</h2>
+                        <div class="case-block-content">
+                            <p>Before any fixed-cost agreement existed, I developed and maintained operational dashboards to:</p>
+                            <ul class="case-block-list">
+                                <li>Monitor job-level performance in real time</li>
+                                <li>Compare cost efficiency across locations and roles</li>
+                                <li>Detect diminishing returns as applicant volume plateaued</li>
+                                <li>Support decisions to scale, pause, or reallocate distribution</li>
+                            </ul>
+                            <p>This ensured that growth in job volume remained data-driven and cost-aware, even as demand increased.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block">
+                        <h2 class="case-block-title">Scaling & Cost Optimization</h2>
+                        <div class="case-block-content">
+                            <p>As LinkedIn distribution costs became a significant operational expense, I supported the transition to a fixed-cost posting agreement, enabling near-unlimited job distribution for a monthly fee.</p>
+                            <p>With this shift:</p>
+                            <ul class="case-block-list">
+                                <li>The operation scaled from approximately 50 active job posts to 1,200+ concurrent postings</li>
+                                <li>Cost per applicant decreased as volume increased</li>
+                                <li>High posting volume became a strategic requirement to fully leverage the fixed-cost model</li>
+                            </ul>
+                            <p>At this stage, optimization moved from individual post efficiency to portfolio-level distribution strategy, ensuring the fixed cost was amortized across a large number of active roles.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-block case-block-highlight">
+                        <h2 class="case-block-title">Output & Results</h2>
+                        <div class="case-block-content">
+                            <ul class="case-results-list">
+                                <li>Operationalization of Jobs by allUP as a scalable job distribution layer</li>
+                                <li>Strong cost control during the variable-cost phase through performance tracking</li>
+                                <li>Successful transition to a fixed-cost, high-volume distribution model</li>
+                                <li>Ability to sustain 1,200+ concurrent job postings</li>
+                                <li>Reduced cost per applicant through scale</li>
+                                <li>Clear understanding of demand dynamics by role and city</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -82,5 +259,25 @@
             <p>Victor G. Jorge</p>
         </div>
     </footer>
+
+    <script>
+        function toggleAccordion(id) {
+            const allItems = document.querySelectorAll('.accordion-item');
+
+            allItems.forEach(item => {
+                const itemId = parseInt(item.dataset.accordion);
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+
+                if (itemId === id) {
+                    header.classList.toggle('active');
+                    content.classList.toggle('active');
+                } else {
+                    header.classList.remove('active');
+                    content.classList.remove('active');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
