@@ -337,6 +337,60 @@ body {
     background: rgba(122, 0, 223, 0.03);
 }
 
+/* Technical Skills Section */
+.section-skills {
+    background: var(--bg-dark);
+    border-top: 1px solid rgba(122, 0, 223, 0.15);
+    border-bottom: 1px solid rgba(122, 0, 223, 0.15);
+}
+
+.skills-grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 80px;
+    margin-top: 48px;
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-category {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.skills-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.skills-items span {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    transition: color 0.2s ease;
+}
+
+.skills-items span:hover {
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .skills-grid-2x2 {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
+
 .section h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -874,6 +928,18 @@ body {
     color: var(--text);
     margin-bottom: 24px;
     letter-spacing: -0.3px;
+}
+
+.case-block-subheading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 28px 0 12px 0;
+    letter-spacing: -0.2px;
+}
+
+.case-block-subheading:first-of-type {
+    margin-top: 20px;
 }
 
 .case-block-content {
