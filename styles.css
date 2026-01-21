@@ -1496,6 +1496,56 @@ body {
     display: block;
 }
 
+/* Case Gallery */
+.case-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.case-gallery-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.3);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.case-gallery-item:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.case-gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.case-gallery-caption {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 1.3;
+}
+
+@media (max-width: 900px) {
+    .case-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .case-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Video Preview Card */
 .video-preview {
     margin: 24px auto;
